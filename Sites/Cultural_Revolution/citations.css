@@ -1,0 +1,43 @@
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow:auto;
+    font-family: Arial, "sans-serif";
+}
+
+.titlebar {
+    background-color: lightblue;
+    padding: 10px 10px 10px 10px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.citations {
+    text-align: center;
+    width: auto;
+}
+
+.citations a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.citations a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.back_button {
+    font-size: 18px;
+    background-color: black;
+    color: white !important;
+    font-weight: 400 !important;
+}
+
+.back_button:hover{
+    background-color: #545454;
+}

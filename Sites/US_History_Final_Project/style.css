@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+
+
+html, body{
+    /* min-width: 800px;
+    min-height: 600px; */
+    padding: 0;
+    margin: 0;
+    background-color: #f6f3ed;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.menu {
+    height: 100vh;
+    width: 14em;
+    position: fixed;
+    z-index: 1;
+    background-color: #f1ede3;
+    border-right: 1px solid #e6decd;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.menu ul{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+}
+.menu ul li a{
+    padding: 8px 6.8px;;
+    color: black;
+    display: block;
+    color: black;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+li#nav-head{
+    font-size: 19px;
+}
+li#nav-cap{
+    font-size: 15px;
+}
+div#navsection:hover, .menu a:hover{
+    background-color: #e6decd;
+    border-radius: 5px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+#nav-cap:hover {
+    visibility: collapse;
+}
+a:hover {
+    font-weight: bold;
+}
+
+#navsection #nav-head {
+    font-weight: bold;
+}
+
+.content {  
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto 30vw; 
+    grid-template-rows: 10em 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title title"
+      "text images";
+    margin: 10em 0px 0px 14em;
+    padding: 0em 10% 0px 10%;
+}
+
+.content#no_images {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto 30vw; 
+    grid-template-rows: 10em 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title title"
+      "text text";
+    margin: 10em 0px 0px 14em;
+    padding: 0em 10% 0px 10%;
+}
+
+.cover {
+    position: absolute;
+    background-position: center;
+    height: 15em;
+    width: 100%;
+    border-bottom: 1px solid #e6decd;
+}
+
+.cover#introduction {
+    background-image: url(Resources/Images/pexels-andrew-neel-2859169.jpg);
+    background-position: auto;
+    background-size: 100%;
+}
+
+.cover#telegraph {
+    background-image: url(Resources/Images/pexels-lil-artsy-3050833.jpg);
+    background-position: auto;
+    background-size: 100%;
+}
+
+.cover#radio {
+    background-image: url(Resources/Images/pexels-cottonbro-studio-4480527.jpg);
+    background-position: auto;
+    background-size: 100%;
+}
+
+.cover#internet {
+    background-image: url(Resources/Images/pexels-field-engineer-442150.jpg);
+    background-position: auto;
+    background-size: 100%;
+}
+
+.title, .text, .images, .footnotes {
+    padding: 0px 1em 0px 1em;
+}
+
+.title {
+    background-color: #f6f3ed;
+    min-height: 10em;
+    text-align: center;
+    grid-area: title; 
+    color: black;
+    border-radius: 25px 25px 0px 0px;
+    border-left: 1px solid #e6decd;
+    border-right: 1px solid #e6decd;
+}
+
+
+.text { 
+    line-height: 25px;
+    grid-area: text; 
+    border-left: 1px solid #e6decd;
+    border-bottom: 1px solid #e6decd;
+    border-radius: 0px 0px 0px 25px;
+    padding-left: 3.5em;
+    /* background-color: lightcoral; */
+}
+
+.text p {
+    padding: 0;
+    margin: 0;
+    text-indent: 2em;
+}
+
+#no_images .text{
+    border-right: 1px solid #e6decd;
+    padding-right: 3.5em;
+    border-radius: 0px 0px 25px 25px;
+}
+  
+.images { 
+    padding-top: 1.6875em;
+    grid-area: images; 
+    border-right: 1px solid #e6decd;
+    border-bottom: 1px solid #e6decd;
+    border-radius: 0px 0px 25px 0px;
+    /* background-color: lightgreen; */
+}
+
+.images img, .images iframe {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.355), 0 6px 20px 0 rgba(0, 0, 0, 0.355);
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; */
+}
+
+iframe#telegraph_video {
+    height: 15vw;
+}
+
+h1{
+    text-align: center;
+    border-radius: 10px;
+    font-size: 60px;
+    /* background-color: white; */
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3#marconi, h3#audion {
+    font-size: 1.5em;
+    color: #345;
+    line-height: 0;
+}
+
+.footnotes a:hover {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+figcaption a {
+    color: black; 
+}
+
+figcaption a:hover{
+    color: gray;
+    font-weight: normal;
+    font-size: .75em;
+    text-decoration: underline;
+}
+
+a#cw-telegraph:before {
+    content: "Cooke and Wheatstone's Telegraph";
+}
+
+a#cw-telegraph:hover:before {
+    content: "By Geni - Photo by User:geni, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=6503269";
+}
+
+a#morse-telegraph:before {
+    content: "Morse's Telegraph ('Morse Key')"
+}
+
+a#morse-telegraph:hover:before {
+    content: "By Hp.Baumeler - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61723472";
+}
+
+a#cw-example:before {
+    content: "Example of the 5 Needle Pattern Required to Make a 'G' on Cooke and Wheatstone's Telegraph";
+}
+
+a#cw-example:hover:before {
+    content: "By Dder - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=64182999";
+}
+
+a#morse-example:before {
+    content: "Morse Code Diagram";
+}
+
+a#morse-example:hover:before {
+    content: "By Rhey T. Snodgrass &amp; Victor F. Camp, 1922 - Own work based on: Intcode.png and International Morse Code.PNG, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3902977";
+}
+
+a#am_fm_gif:before {
+    content: "AM (Amplitude Modulation) vs FM (Frequency Modulation) Radio Signals";
+}
+
+a#am_fm_gif:hover:before{
+    content: "By Berserkerus - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=5071748";
+}
+
+a#triode-audion:before {
+    content: "Image of an Audion"
+}
+
+a#triode-audion:hover:before {
+    content: "By Gregory F. Maxwell &lt;gmaxwell@gmail.com&gt; PGP:0xB0413BFA - Photo by uploader, taken at The History of Audio: The Engineering of Sound, an exhibition of the San Francisco Airport Museums[1] in SFO Airport, Terminal 3 from 2006-09 to 2007-05., GFDL 1.2, https://commons.wikimedia.org/w/index.php?curid=1365357;"
+}

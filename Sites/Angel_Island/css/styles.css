@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&family=Source+Serif+Pro:wght@400;700;900&display=swap');
+
+
+html,body{
+    font-family: 'Source Serif Pro', serif; 
+    font-size: 16px;
+    margin:0;
+    padding:5px;
+}
+
+p {
+    text-indent: 40px;
+    font-size: 16px;
+}
+
+.content {
+    display: flex;
+}
+
+.Text {
+    padding-left: 40px;
+    line-height: 1.5;
+    width: 80vw;
+}
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+  }
+
+.Images {
+    max-width: 500px;
+    border-left: 2px dotted gray;
+    max-height: 90vh;
+    overflow: scroll;
+}
+
+sup a {
+    text-decoration: none;
+    color: black;
+}
+
+.Footnotes {
+    font-size: 12px;
+    width:100%;
+    line-height: 1 !important;
+    /* position: fixed;
+    bottom:0; */
+    color: gray;
+    border-top: 2px dotted gray;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10px;
+}
+  
+ul li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    list-style-type: none;
+    float: left;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+}
+  
+ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight:bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #111;
+    color: white;
+    transition: box-shadow .25s ease-in-out; /* color .25s ease-in-out  */
+}
+
+ul li a:hover {
+    box-shadow: inset 250px 0 0 0 #111;
+    color: white;
+}
+
+div.citations ol li, div.citations h1, div.Text a#inline-link{
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
+}
+
+div.citations ol li a:hover, div.Text a#inline-link:hover {
+    color: black;
+}
+
+div.citations a, div.Text a#inline-link{
+    color: blue;
+}
+
+h1{
+    padding-left: 5px;
+}
+  
+p{
+    padding-left: 10px;
+    padding: 0px 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+/* Caption Text*/
+.link#aerial_view::before {
+    content: "↳ Aerial View of Angel Island"; 
+}
+
+.link:hover::before{
+    font-size: x-small;
+    color: gray; 
+}
+
+.link#aerial_view:hover::before {
+    content: "By Taras Bobrovytsky - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=90880987"; 
+}
+
+.link#map::before {
+    content:"↳ Map of Angel Island & Immigration Area";
+}
+
+.link#map:hover::before{
+    content: 'Hoskins, Gareth. “A Secret Reservoir of Values" (Fig. 1)';
+}
+
+.link#wall_cartoon::before {
+    content:"↳ This Anti-Chinese cartoon depicts a line of American workers laying down bricks engraved with labels like “un-american” and non reciprocity to build what is labeled by the illustrator as “The Anti-Chinese Wall.” It appears that, based on the architecture and depictions of the people, China is in the background of the cartoon and has workers breaking down a similar wall while allowing a US ship in with trade goods. The cartoon seems to be mocking the fact that the US is building walls against the Chinese while the Chinese are simultaneously breaking down walls and trading with the US.";
+}
+
+.link#wall_cartoon:hover::before{
+    content: 'By Friedrich Graetz - Cartoon by Friedrich Grätz (d. 1913) published in Puck, v. 11, no. 264 (29 March 1882). Via Library of Congress website at [1]. Border cropped, contrast adjusted, and image converted from TIF to jpg by uploader to Wikimedia Commons., Public Domain, https://commons.wikimedia.org/w/index.php?curid=81680571';
+}
+
+.link#floorplan::before {
+    content:"↳ Barracks Floorplan at Angel Island";
+}
+
+.link#floorplan:hover::before{
+    content: 'Hoskins, Gareth. “A Secret Reservoir of Values" (Fig. 2)';
+}
+
+.link#poem_translation::before {
+    content:"↳ Translation of a Poem from Angel Island (click to see source)";
+}
+
+.link#poem_translation:hover::before{
+    content: '“Pacific Link: The KQED Asian Education Initiative: History: The Poetry of Angel Island.” KQED. Accessed February 27, 2023. https://www.kqed.org/w/pacificlink/history/angelisland/poetry/';
+}
+
+/* */
+.link:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 8px;
+}
